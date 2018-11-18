@@ -20,7 +20,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 finally {
-                    startActivity(new Intent(SplashScreenActivity.this, LoginActivity.class));
+                    startActivity(new Intent(SplashScreenActivity.this, RegisterationActivity.class));
                 }
             }
         };timer.start();

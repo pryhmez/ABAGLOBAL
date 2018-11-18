@@ -22,8 +22,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterationActivity extends AppCompatActivity {
-
-    public class RegisterActivity extends AppCompatActivity {
         private FirebaseUser currentUser;
         private FirebaseAuth mAuth;
         private DatabaseReference database;
@@ -47,7 +45,7 @@ public class RegisterationActivity extends AppCompatActivity {
             alreadyhaveanacct.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+                    startActivity(new Intent(RegisterationActivity.this, LoginActivity.class));
                 }
             });
             createAcctButton.setOnClickListener(new View.OnClickListener() {
@@ -82,18 +80,18 @@ public class RegisterationActivity extends AppCompatActivity {
 
                                     String currentUserId = mAuth.getCurrentUser().getUid();
 
-                                    rootRef.child("Users").child(currentUserId).push().setValue("");
+                                    rootRef.child("Business").child(currentUserId).push().setValue("");
                                     Log.d("pushed", "registered to database");
                                     takeUserToMainActivity();
 
-                                    Toast.makeText(RegisterActivity.this,
+                                    Toast.makeText(RegisterationActivity.this,
                                             "Registration Successful", Toast.LENGTH_SHORT).show();
-                                    takeUserToMainActivity();
+//                                    takeUserToMainActivity();
                                     Log.d("change activity", "started main activity successfully");
 //                                progressDialog.dismiss();
                                 } else {
                                     String message = task.getException().toString();
-                                    Toast.makeText(RegisterActivity.this,
+                                    Toast.makeText(RegisterationActivity.this,
                                             "Sorry " + message, Toast.LENGTH_SHORT).show();
 //                                progressDialog.dismiss();
                                 }
@@ -104,7 +102,7 @@ public class RegisterationActivity extends AppCompatActivity {
         }
 
         private void takeUserToMainActivity() {
-            Intent intent = new Intent(RegisterActivity.this,
+            Intent intent = new Intent(RegisterationActivity.this,
                     MainActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
@@ -119,5 +117,5 @@ public class RegisterationActivity extends AppCompatActivity {
 
         }
     }
-}
+
 
