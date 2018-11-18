@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "685612441448",
+    "firebase_url": "https://abawakasearch.firebaseio.com",
+    "project_id": "abawakasearch",
+    "storage_bucket": "abawakasearch.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685612441448:android:2074f762999a3bcd",
+        "android_client_info": {
+          "package_name": "com.example.prime.abawakasearch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685612441448-tofqkndvsdidvin8rkrhubcs6rdkua56.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.prime.abawakasearch",
+            "certificate_hash": "0bdaec21bd9873a8bc6d880ae8d544bb3cb25108"
+          }
+        },
+        {
+          "client_id": "685612441448-hvgl78p183hid8bdgd7rq3l75emjd3v3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0ZNoDAP0R4EiKFBBFO6CoX_3p7HOBEu4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685612441448-hvgl78p183hid8bdgd7rq3l75emjd3v3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
